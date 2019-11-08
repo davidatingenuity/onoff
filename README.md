@@ -11,6 +11,10 @@ Raspberry Pi or BeagleBone.
 
 onoff supports Node.js versions 6, 8, 10, 12 and 13.
 
+## Fork description
+
+This fork adds support for the case where exporting gpio (by using eg echo 106 > /sys/class/gpio/export) results in a named GPIO being created (eg /sys/class/gpio/PD10). It allows providing a name string in the options, which is used instead of the usual name (eg gpio106) when accessing the gpio.
+
 ## Contents
 
  * [Installation](#installation)
