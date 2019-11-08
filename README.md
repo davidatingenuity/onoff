@@ -285,6 +285,7 @@ Configures the GPIO based on the passed arguments and returns a new Gpio
 object that can be used to access the GPIO.
 
 The following options are supported:
+- name - A string used instead of gpio<num> when accessing the GPIO
 - debounceTimeout - An unsigned integer specifying a millisecond delay. Delays
 invoking the watch callback for an interrupt generating input GPIO while the
 input is bouncing. The watch callback will not be invoked until the input
