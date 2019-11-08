@@ -7,6 +7,7 @@ export type Options = {
     debounceTimeout?: number,
     activeLow?: boolean,
     reconfigureDirection?: boolean,
+    name?: string
 }
 
 export type BinaryValue = High | Low;

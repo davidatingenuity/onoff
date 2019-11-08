@@ -163,7 +163,7 @@ class Gpio {
     options = options || {};
 
     this._gpio = gpio;
-    this._gpioPath = GPIO_ROOT_PATH + 'gpio' + this._gpio + '/';
+    this._gpioPath = GPIO_ROOT_PATH + (options.name || 'gpio' + this._gpio ) + '/';
     this._debounceTimeout = options.debounceTimeout || 0;
     this._readBuffer = Buffer.alloc(16);
     this._readSyncBuffer = Buffer.alloc(16);
